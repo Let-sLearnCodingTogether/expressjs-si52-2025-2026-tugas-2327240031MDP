@@ -1,0 +1,28 @@
+{
+  "name": "expressjs-si52-2025-2026-tugas-2327240031mdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-tugas-2327240031MDP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-tugas-2327240031MDP/issues"
+  },
+  "homepage": "https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-tugas-2327240031MDP#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
