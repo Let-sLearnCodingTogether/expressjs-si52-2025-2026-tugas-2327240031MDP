@@ -22,4 +22,5 @@ const aktivitasOlahragaSchema = new mongoose.Schema(
 )
 
 const aktivitasOlahragaModel = new mongoose.model("Aktivitas", aktivitasOlahragaSchema);
+
 export default aktivitasOlahragaModel;

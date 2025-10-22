@@ -11,4 +11,6 @@ api.put('/aktivitasOlahraga/:id', aktivitasOlahragaController.updateAktivitasOla
 
 api.delete('/aktivitasOlahraga/:id', aktivitasOlahragaController.deleteAktivitasOlahraga)
 
+
+
 export default api
