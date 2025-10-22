@@ -1,4 +1,4 @@
-import aktivitasOlahragaModel from "../model/aktivitasOlahragaModel";
+import aktivitasOlahragaModel from "../model/aktivitasOlahragaModel.js";
 
 export const listAktivitasOlahraga = async (req, res) => {
     try {
