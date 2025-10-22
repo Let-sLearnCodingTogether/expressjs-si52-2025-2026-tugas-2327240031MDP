@@ -1,4 +1,4 @@
-import aktivitasOlahragaModel from "../models/aktivitasOlahragaModel";
+import aktivitasOlahragaModel from "../model/aktivitasOlahragaModel";
 
 export const listAktivitasOlahraga = async (req, res) => {
     try {
@@ -101,7 +101,7 @@ export const deleteAktivitasOlahraga = async (req, res) => {
             message : "Data Log Aktivitas Olahraga Tidak Ditemukan",
             data : null
         })
-        
+
     } catch (error) {
         res.status(500).json({
             message : error.message,
