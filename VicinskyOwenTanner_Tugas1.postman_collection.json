@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "6a36e92f-27d3-4b35-a2d7-bf96f1d8c175",
+		"name": "VicinskyOwenTanner_Tugas1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49110192",
+		"_collection_link": "https://vicinskyowentanner-2327240031-3893896.postman.co/workspace/VICINSKY-OWEN-TANNER-2327240031~7f09fd48-1895-4858-85c0-b51160edd75f/collection/49110192-6a36e92f-27d3-4b35-a2d7-bf96f1d8c175?action=share&source=collection_link&creator=49110192"
+	},
+	"item": [
+		{
+			"name": "AuthRegister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Vicinsky Owen Tanner\",\r\n    \"email\" : \"Owen.tanner15@gmail.com\",\r\n    \"password\" : \"Owen12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Vicinsky Owen Tanner\",\r\n    \"email\" : \"Owen.tanner15@gmail.com\",\r\n    \"password\" : \"Owen12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthView",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZpY2luc2t5IE93ZW4gVGFubmVyIiwiZW1haWwiOiJPd2VuLnRhbm5lcjE1QGdtYWlsLmNvbSIsImlhdCI6MTc2MTIwMDY3NywiZXhwIjoxNzYxMjA0Mjc3fQ.s_26DlT1EK9ZFcuJ02g5zZnm5ah7kMbdLis4PkZYAP4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AktivitasGET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AktivitasPOST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/aktivitasOlahraga",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"aktivitasOlahraga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AktivitasPUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activityType\" : \"Marathon\",\r\n    \"durationInMinutes\" : 52\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/aktivitasOlahraga/68f9cc38567827cec4d073c6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"aktivitasOlahraga",
+						"68f9cc38567827cec4d073c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AktivitasDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/aktivitasOlahraga/68f9cc38567827cec4d073c6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"aktivitasOlahraga",
+						"68f9cc38567827cec4d073c6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

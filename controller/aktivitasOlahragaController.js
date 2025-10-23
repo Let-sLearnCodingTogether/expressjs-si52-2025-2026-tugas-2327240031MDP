@@ -88,10 +88,10 @@ export const deleteAktivitasOlahraga = async (req, res) => {
             })
         }
 
-        const response = await aktivitasOlahragaModel.findByAndDelete(id)
+        const response = await aktivitasOlahragaModel.findByIdAndDelete(id)
 
         if (response) {
-            return res.status(200).jso({
+            return res.status(200).json({
                 message : "Data Log Aktivitas Olahraga Berhasil Dihapus",
                 data : null
             })
