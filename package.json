@@ -2,7 +2,7 @@
   "name": "expressjs-si52-2025-2026-tugas-2327240031mdp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js"

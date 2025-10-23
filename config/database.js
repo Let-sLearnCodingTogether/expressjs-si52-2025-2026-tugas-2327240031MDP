@@ -6,7 +6,7 @@ const database = async () => {
 
         const response = await mongoose.connect("mongodb://127.0.0.1:27017/AktivitasOlahraga?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8")
 
-        console.log(`Koneksi ke MongoDB berhasil pada host : ${response.host}`);
+        console.log(`Koneksi ke MongoDB berhasil pada host : ${response.connection.host}`);
 
     } catch (error) {
         console.error("Gagal terknoeki ke MongoDB");
