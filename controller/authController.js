@@ -9,15 +9,17 @@ export const register = async (req, res) => {
         
         const hashPassword = await hash(request.password);
 
-        await userModel.create({
+        const user = await userModel.create({
             username: request.username,
             email: request.email,
             password: hashPassword
-        })
+        });
 
         res.status(201).json({
             message: "Berhasil melakukan register, silahkan login.",
-            data: null
+            data: {
+                id: user._id
+            }
         })
 
     } catch (error) {
@@ -72,3 +74,27 @@ export const login = async (req, res) => {
         })
     }
 }
+
+export const viewProfile = async (req, res) => {
+    try {
+        const user = await userModel.findById(req.user.id).select('-password');
+
+        if (!user) {
+            return res.status(404).json({
+            message: "User tidak ditemukan.",
+            data: null
+          });
+        }
+
+        res.status(200).json({
+            message: "Profile berhasil diakses.",
+            data: user
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+            data: null
+        });
+    }
+};

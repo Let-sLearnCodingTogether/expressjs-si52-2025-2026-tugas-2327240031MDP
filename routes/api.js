@@ -1,6 +1,7 @@
 import express from 'express'
 import * as aktivitasOlahragaController from '../controller/aktivitasOlahragaController.js'
 import * as authController from '../controller/authController.js'
+import { protect } from '../middleware/authMiddleware.js'
 
 const api = express.Router()
 
@@ -11,5 +12,6 @@ api.delete('/aktivitasOlahraga/:id', aktivitasOlahragaController.deleteAktivitas
 
 api.post('/register', authController.register)
 api.post('/login', authController.login)
+api.get('/profile', protect, authController.viewProfile)
 
 export default api

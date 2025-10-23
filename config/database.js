@@ -9,7 +9,7 @@ const database = async () => {
         console.log(`Koneksi ke MongoDB berhasil pada host : ${response.connection.host}`);
 
     } catch (error) {
-        console.error("Gagal terknoeki ke MongoDB");
+        console.error("Gagal terknoeki ke MongoDB", error.message);
 
         process.exit(1);
     }
